@@ -157,6 +157,7 @@ img{
 .body{
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 .resume{
@@ -303,4 +304,95 @@ ul{
   align-items: center;
   flex-direction: column;
   padding: none;
+}
+
+.projects{
+  height: 100vh;
+  background-color: #7B7B7C;
+  opacity: .95;
+  border-radius: 5px;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.innovate{
+  display: flex;
+}
+
+.project-name{
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 64pt;
+  font-weight: bolder;
+  color: #33575F;
+  margin-bottom: .5%;
+  text-align: center;
+  width: 100%;
+}
+
+.contact-form{
+  display: flex;
+  justify-content: center;
+}
+
+form{
+  background-color: #8F91A2;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  opacity: .95;
+  box-shadow: 10px 10px 5px #30323D;
+  align-items: center;
+  
+}
+
+input{
+  width: 45%;
+  align-self: center;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 22pt;
+  font-weight: bolder;
+  color: #33575F;
+  text-align: center;
+  border: none;
+  background-color: #E5E5E7;
+  border-radius: 5px;
+}
+
+textarea{
+  width: 80%;
+  margin: 1%;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 22pt;
+  font-weight: bolder;
+  color: #33575F;
+  text-align: center;
+  border: none;
+  background-color: #E5E5E7;
+  border-radius: 5px;
+}
+
+.form{
+  align-self: center;
+}
+
+.input-form{
+  width: 80%;
+  display: flex;
+  margin: 1%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.submit{
+  margin: 1%;
+  width: fit-content;
+  box-shadow: 5px 5px 2.5px #30323D;
+}
+
+.submit:hover{
+  cursor: pointer;
+  background-color: #5C9EAD;
+  box-shadow: 5px 5px 2.5px #33575F;
 }
