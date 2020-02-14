@@ -157,7 +157,6 @@ img{
 .body{
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
 .resume{
@@ -333,6 +332,7 @@ ul{
 .contact-form{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 form{
@@ -340,11 +340,13 @@ form{
   width: 70%;
   display: flex;
   flex-direction: column;
-  margin: 1%;
+  margin: 2%;
   opacity: .95;
   box-shadow: 10px 10px 5px #30323D;
   align-items: center;
-  
+  height: 50vh;
+  border-radius: 5px;
+  justify-content: center;
 }
 
 input{
@@ -395,4 +397,8 @@ textarea{
   cursor: pointer;
   background-color: #5C9EAD;
   box-shadow: 5px 5px 2.5px #33575F;
+}
+
+.contact{
+  height: 100vh;
 }

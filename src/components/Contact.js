@@ -22,11 +22,33 @@ export default class Contact extends Component {
         this.setState({message: event.target.value})
     }
 
+    handleSubmit = (event) => {
+        event.preventDefault()
+        console.log(this.state)
+        fetch('http://localhost:3002/send',{
+            method: "POST",
+            body: JSON.stringify(this.state),
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+          }).then(
+            (response) => (response.json())
+           ).then((response)=>{
+          if (response.status === 'success'){
+            alert("Message Sent.") 
+            window.location.reload();
+          }else if(response.status === 'fail'){
+            alert("Message failed to send.")
+          }
+        })
+    }
+
     render() {
         return (
-            <div>
+            <div className='contact'>
                 <div className='contact-form'>
-                    <form action="mailto:diana.m.miller1@gmail.com">
+                    <form onSubmit={this.handleSubmit}>
                         <h2 className='form'>Contact Form</h2>
                         <span className='input-form'>
                             <input type="text" placeholder='name' onChange={this.setName} required/>
