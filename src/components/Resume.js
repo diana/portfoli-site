@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 export default class Resume extends Component {
     render() {
         return (
-            <div>
+            <div className='resume-page'>
                 <div className='resume'>
                     <span className='resume-intro'>
                         <h2>Diana Miller</h2>

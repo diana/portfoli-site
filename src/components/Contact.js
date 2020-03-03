@@ -24,8 +24,7 @@ export default class Contact extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        console.log(this.state)
-        fetch('http://localhost:3002/send',{
+        fetch('http://localhost:5000/send',{
             method: "POST",
             body: JSON.stringify(this.state),
             headers: {
